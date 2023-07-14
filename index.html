@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" type="text/css" href="library.css"/>
+</head>
+<body>
+    <div id="table">
+        
+    </div>    
+    <div id="buttons">
+        <button type="button" id="new">New Book</button>
+    </div>
+    <form id="form-popup" method="get" >
+        <div id="formContainer">
+            <label for="title"><b>What is the title of your book?</b></label>
+            <input type="text" id="title" name="title" required />
+
+            <label for="author"><b>Who is the author?</b></label>
+            <input type="text" id="author" name="author" required />
+
+            <label for="pages"><b>How many pages does it have?</b></label>
+            <input type="number" id="pages" name="pages" required />
+
+            <label for="read"><b>Have you read this book?</b></label>
+            <select id="read" name="read" required>
+                <option value="Read">Yes</option>
+                <option value="Not Read">No</option>
+            </select>
+
+            <label for="submitBtn"></label>
+            <input type="submit" id="submitBtn" value="Create Book" />
+
+            <button type="button" id="cancel">Cancel</button>
+        </div>
+    </form>
+    <script src="library.js"></script>
+</body>
+</html>
